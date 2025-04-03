@@ -35,7 +35,7 @@ np.random.seed(0)
 
 def generate_cluster_data(n_total, n_classes, n_clusters, input_dim):
     # Generate C-cluster synthetic data for specified dimensions
-    # used for ablation study with Li et al. 19 https://arxiv.org/pdf/1903.11680, as suggested by Reviewer 1.
+    # used for ablation study as suggested by Reviewer 1.
     # n_total is the total number of samples
     # n_classes is the number of classes (smaller than n_clusters)
     # input_dim is the dimension of the data
@@ -109,8 +109,6 @@ class SimpleNN(nn.Module):
         #self.fc_hidden = nn.Linear(width, width, bias = False)
         self.fc2 = nn.Linear(width, n_classes, bias = False)   
         #self.fc1_linear = nn.Linear(input_dim, n_classes, bias = False)
-        # use LeCun initialization
-        # nn.init.kaiming_normal_(self.fc1_linear.weight)
     def forward(self, x):
 
         #x = self.fc1_linear(x)
@@ -139,8 +137,6 @@ class linearNN(nn.Module):
         #self.fc_hidden = nn.Linear(width, width, bias = False)
         #self.fc2 = nn.Linear(width, n_classes, bias = False)   
         self.fc1_linear = nn.Linear(input_dim, n_classes, bias = False)
-        # use LeCun initialization
-        # nn.init.kaiming_normal_(self.fc1_linear.weight)
     def forward(self, x):
 
         #x = self.fc1_linear(x)
