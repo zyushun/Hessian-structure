@@ -25,8 +25,8 @@ visual_degree_block_hessian = [10, 100]
 loss_type = 'CE'
 optimizer_type = 'adam'
 cmap = 'cividis'
-gaussian_data = False
-comment = 'clusterd-data-n_total-'+str(n_total)+'-'+model_type+'-dim-'+str(input_dim)+'-width-'+str(width)+'-cluster-'+ str(n_clusters)+'-class-'+str(n_classes)+'-adam-'+loss_type+'visiondegree'+str(visual_degree)+'T'+str(num_epochs)+'optimizer-'+optimizer_type +'lr-'+str(lr)
+gaussian_data = True #False
+comment = 'gaussian-data-n_total-'+str(n_total)+'-'+model_type+'-dim-'+str(input_dim)+'-width-'+str(width)+'-cluster-'+ str(n_clusters)+'-class-'+str(n_classes)+'-adam-'+loss_type+'visiondegree'+str(visual_degree)+'T'+str(num_epochs)+'optimizer-'+optimizer_type +'lr-'+str(lr)
 
 torch.manual_seed(0)
 np.random.seed(0)
