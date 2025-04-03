@@ -34,7 +34,7 @@ np.random.seed(0)
 
 
 def generate_cluster_data(n_total, n_classes, n_clusters, input_dim):
-    # Generate C-cluster synthetic data for specified dimensions
+    # Generate clustered synthetic data for specified dimensions
     # used for ablation study as suggested by Reviewer 1.
     # n_total is the total number of samples
     # n_classes is the number of classes (smaller than n_clusters)
