@@ -16,9 +16,3 @@ python train_gaussian.py
 ```
 
 
-
-
-
-```
-
-```
